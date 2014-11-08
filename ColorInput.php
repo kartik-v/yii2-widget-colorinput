@@ -21,7 +21,7 @@ use yii\web\JsExpression;
  * @since 1.0
  * @see http://twitter.github.com/typeahead.js/examples
  */
-class ColorInput extends \kartik\form\Html5Input
+class ColorInput extends \kartik\base\Html5Input
 {
     /**
      * @var boolean whether to use the native HTML5 color input
