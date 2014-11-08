@@ -98,7 +98,7 @@ class ColorInput extends \kartik\base\Html5Input
             parent::registerAssets();
             return;
         }
-        Html5InputAsset::register($view);
+        \kartik\base\Html5InputAsset::register($view);
         $caption = 'jQuery("#' . $this->options['id'] . '")';
         $input = 'jQuery("#' . $this->html5Options['id'] . '")';
         $this->pluginOptions['change'] = new JsExpression("function(color){{$caption}.val(color.toString());}");
