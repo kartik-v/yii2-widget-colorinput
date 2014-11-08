@@ -15,7 +15,7 @@
     "minimum-stability": "stable",
     "require": {
         "kartik-v/yii2-krajee-base": "*",
-        "kartik-v/yii2-widget-form": "*"
+        "kartik-v/yii2-widget-activeform": "*"
     },
     "autoload": {
         "psr-4": {
