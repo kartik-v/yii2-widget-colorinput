@@ -101,7 +101,7 @@ class ColorInput extends \kartik\base\Html5Input
         \kartik\base\Html5InputAsset::register($view);
         $caption = 'jQuery("#' . $this->options['id'] . '")';
         $input = 'jQuery("#' . $this->html5Options['id'] . '")';
-        $this->pluginOptions['change'] = new JsExpression("function(color){{$caption}.val(color.toString());}");
+        $this->pluginOptions['change'] = new JsExpression("function(color){{$caption}.val(color.toString()).trigger('change');}");
         $this->registerPlugin('spectrum', $input);
         $js = <<< JS
 {$input}.spectrum('set','{$value}');
