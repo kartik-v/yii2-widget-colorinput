@@ -73,6 +73,9 @@ class ColorInput extends \kartik\base\Html5Input
     {
         $this->type = 'color';
         $this->width = '60px';
+        Html::addCssClass($this->containerOptions, 'spectrum-group');
+        Html::addCssClass($this->html5Options, 'spectrum-source');
+        Html::addCssClass($this->options, 'spectrum-input');
         if (!$this->useNative) {
             Html::addCssClass($this->html5Container, 'input-group-sp');
             if (!isset($this->pluginOptions['preferredFormat'])) {
@@ -99,14 +102,17 @@ class ColorInput extends \kartik\base\Html5Input
             return;
         }
         \kartik\base\Html5InputAsset::register($view);
-        $caption = 'jQuery("#' . $this->options['id'] . '")';
         $input = 'jQuery("#' . $this->html5Options['id'] . '")';
-        $this->pluginOptions['change'] = new JsExpression("function(color){{$caption}.val(color.toString());}");
         $this->registerPlugin('spectrum', $input);
+
         $js = <<< JS
-{$input}.spectrum('set','{$value}');
-{$caption}.on('change', function(){
-    {$input}.spectrum('set',{$caption}.val());
+jQuery('.spectrum-group').on('change', 'input', function(e, color){
+    var group = jQuery(this).closest('.spectrum-group');
+    if (jQuery(this).is('.spectrum-source')) {
+        group.find('.spectrum-input').val(color.toString());
+    } else {
+        group.find('.spectrum-source').spectrum('set',jQuery(this).val());
+    }
 });
 JS;
         $view->registerJs($js);
