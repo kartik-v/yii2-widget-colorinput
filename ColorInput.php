@@ -183,9 +183,6 @@ class ColorInput extends Html5Input
         Html::addCssClass($this->options, 'spectrum-input');
         if (!$this->useNative) {
             Html::addCssClass($this->html5Container, 'input-group-sp');
-            if (!isset($this->pluginOptions['preferredFormat'])) {
-                $this->pluginOptions['preferredFormat'] = 'hex';
-            }
             $this->pluginOptions = ArrayHelper::merge($this->_defaultOptions, $this->pluginOptions);
         }
         $this->registerColorInput();
