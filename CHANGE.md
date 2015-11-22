@@ -9,7 +9,6 @@ Change Log: `yii2-widget-colorinput`
 - (enh #10): Update to latest version of spectrum plugin.
 - (enh #11): Implement translations and locales.
 - (enh #12): Implement theming for Krajee style.
-- (enh #13): Eliminate `polyFill` property.
 
 ## Version 1.0.0
 

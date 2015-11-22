@@ -148,19 +148,12 @@ class ColorInput extends Html5Input
     /**
      * @inheritdoc
      */
-    public function init()
+    public function run()
     {
         $this->type = 'color';
         $this->width = '60px';
-        parent::init();
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function run()
-    {
         $this->_msgCat = 'kvcolor';
+        $this->html5Options['value'] = $this->hasModel() ? Html::getAttributeValue($this->model, $this->attribute) : $this->value;
         $this->initI18N(__DIR__);
         if (substr($this->language, 0, 2) !== 'en') {
             $this->_defaultOptions += [
@@ -177,8 +170,9 @@ class ColorInput extends Html5Input
         Html::addCssClass($this->options, 'spectrum-input');
         if (!$this->useNative) {
             Html::addCssClass($this->html5Container, 'input-group-sp');
-            $this->pluginOptions = ArrayHelper::merge($this->_defaultOptions, $this->pluginOptions);
+            $this->pluginOptions = array_replace_recursive($this->_defaultOptions, $this->pluginOptions);
         }
+        $this->initInput();
         $this->registerColorInput();
     }
 
@@ -188,8 +182,6 @@ class ColorInput extends Html5Input
     public function registerColorInput()
     {
         $view = $this->getView();
-        $value = $this->hasModel() ? Html::getAttributeValue($this->model, $this->attribute) : $this->value;
-        $this->html5Options['value'] = $value;
         ColorInputAsset::register($view);
         if ($this->useNative) {
             return;
@@ -202,6 +194,7 @@ class ColorInput extends Html5Input
         }
         Html5InputAsset::register($view);
         $input = 'jQuery("#' . $this->html5Options['id'] . '")';
-        $this->registerPlugin('spectrum', $input);
+        $el = 'jQuery("#' . $this->options['id'] . '")';
+        $this->registerPlugin('spectrum', $input, "function(){{$input}.spectrum('set',{$el}.val());}");
     }
 }

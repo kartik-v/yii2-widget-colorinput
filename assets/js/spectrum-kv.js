@@ -12,12 +12,12 @@
     "use strict";
     $(document).on('ready', function () {
         $('.spectrum-group').on('change', 'input', function (e, color) {
-            var $el = $(this), $group = $el.closest('.spectrum-group');
+            var $el = $(this), $group = $el.closest('.spectrum-group'), val = $el.val();
             if ($el.is('.spectrum-source')) {
                 $group.find('.spectrum-input').val(color.toString());
-            } else {
-                $group.find('.spectrum-source').spectrum('set', $el.val());
+                val = color.toHslString();
             }
+            $group.find('.spectrum-source').spectrum('set', val);
         });
     });
 })(window.jQuery);
