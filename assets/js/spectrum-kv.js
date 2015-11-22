@@ -11,7 +11,6 @@
 (function ($) {
     "use strict";
     $(document).on('ready', function () {
-        /*
         $('.spectrum-group').on('change', 'input', function (e, color) {
             var $el = $(this), $group = $el.closest('.spectrum-group');
             if ($el.is('.spectrum-source')) {
@@ -20,6 +19,5 @@
                 $group.find('.spectrum-source').spectrum('set', $el.val());
             }
         });
-        */
     });
 })(window.jQuery);
