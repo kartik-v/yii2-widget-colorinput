@@ -41,12 +41,6 @@ class ColorInput extends Html5Input
     public $showDefaultPalette = true;
 
     /**
-     * @var boolean whether to automatically polyfill for the HTML5 color input in an unsupported browser when you have
-     *     set `useNative` to true
-     */
-    public $polyFill = false;
-
-    /**
      * @var array default plugin options
      */
     protected $_defaultOptions = [
@@ -197,7 +191,7 @@ class ColorInput extends Html5Input
         $value = $this->hasModel() ? Html::getAttributeValue($this->model, $this->attribute) : $this->value;
         $this->html5Options['value'] = $value;
         ColorInputAsset::register($view);
-        if ($this->useNative && !$this->polyFill) {
+        if ($this->useNative) {
             return;
         }
         if ($this->showDefaultPalette) {
