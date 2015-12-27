@@ -1,6 +1,16 @@
 Change Log: `yii2-widget-colorinput`
 ====================================
 
+## Version 1.0.2
+
+**Date:** 27-Dec-2015
+
+- (enh #16): Various enhancements for input type recognition and CSS.
+    - input `type` property will be defaulted to `text` if `useNative` is `false` and will default to `color` if `useNative` is `true`
+    - input `type` property is now made configurable
+    - plugin loading indicator will be shown until spectrum plugin loads - if `pluginLoading` is `true`
+    - will be complemented by enhancements kartik-v/yii2-krajee-base#50, kartik-v/yii2-krajee-base#51
+
 ## Version 1.0.1
 
 **Date:** 22-Nov-2015
