@@ -5,6 +5,7 @@ Change Log: `yii2-widget-colorinput`
 
 **Date:** 27-Dec-2015
 
+- (enh #15): Correct comma in Japanese translation.
 - (enh #16): Various enhancements for input type recognition and CSS.
     - input `type` property will be defaulted to `text` if `useNative` is `false` and will default to `color` if `useNative` is `true`
     - input `type` property is now made configurable

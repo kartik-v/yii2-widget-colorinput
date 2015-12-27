@@ -18,7 +18,7 @@
  */
 return [
     'cancel' => "中止",
-    'choose' => "選択"
+    'choose' => "選択",
     'Clear Color Selection' => '',
     'less' => '',
     'more' => '',
