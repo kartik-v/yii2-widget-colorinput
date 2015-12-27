@@ -26,6 +26,14 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.sp-krajee .sp-clear  {
+    cursor: pointer;
+}
+
+.sp-krajee .sp-clear:hover {
+    opacity: 0.75;
+}
+
 .sp-krajee .sp-choose, .sp-krajee .sp-cancel, .sp-krajee button {
     display: inline-block;
     line-height: 1.42857143;
