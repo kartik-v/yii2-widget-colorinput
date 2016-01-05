@@ -17,7 +17,7 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'cancel' => "Відміна",
+    'cancel' => "Скасувати",
     'choose' => "Обрати",
     'Clear Color Selection' => "Очистити",
     'less' => "Сховати",
