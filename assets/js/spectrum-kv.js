@@ -1,5 +1,5 @@
 /*!
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2015
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
  * @version 1.0.3
  * 
  * Additional jQuery plugin enhancements for ColorInput Spectrum plugin by Krajee.
