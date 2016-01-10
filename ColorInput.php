@@ -4,7 +4,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-widgets
  * @subpackage yii2-widget-colorinput
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 namespace kartik\color;
@@ -38,6 +38,11 @@ class ColorInput extends Html5Input
      * @var boolean whether to show a default palette of colors
      */
     public $showDefaultPalette = true;
+
+    /**
+     * @var string the name of the jQuery plugin
+     */
+    public $pluginName = 'spectrum';
 
     /**
      * @var array default plugin options
@@ -207,6 +212,6 @@ class ColorInput extends Html5Input
         $el = 'jQuery("#' . $this->options['id'] . '")';
         $cont = 'jQuery("#' . $this->html5Container['id'] . '")';
         $doneJs = "function(){{$input}.spectrum('set',{$el}.val());{$cont}.removeClass('kv-center-loading');}";
-        $this->registerPlugin('spectrum', $input, $doneJs);
+        $this->registerPlugin($this->pluginName, $input, $doneJs);
     }
 }

@@ -4,7 +4,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
  * @package yii2-widgets
  * @subpackage yii2-widget-colorinput
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 namespace kartik\color;
