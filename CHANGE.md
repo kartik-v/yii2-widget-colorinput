@@ -3,12 +3,13 @@ Change Log: `yii2-widget-colorinput`
 
 ## Version 1.0.3
 
-**Date:** 10-Jan-2016
+**Date:** 14-Jan-2016
 
 - (enh #18): Add Ukranian Translations.
 - (enh #19): Update Ukranian Translations.
 - (bug #20): Fix minified JS `spectrum-kv.min.js`.
 - (enh #21): Enhancements for PJAX based reinitialization. Complements enhancements in kartik-v/yii2-krajee-base#52 and kartik-v/yii2-krajee-base#53.
+- (enh #22): Add branch alias for dev-master latest release.
 
 ## Version 1.0.2
 

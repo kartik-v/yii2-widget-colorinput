@@ -14,8 +14,8 @@
         $('.spectrum-group').on('change', 'input', function (e, color) {
             var $el = $(this), $group = $el.closest('.spectrum-group'), val = $el.val();
             if ($el.is('.spectrum-source')) {
-                $group.find('.spectrum-input').val(color.toString());
-                val = color.toHslString();
+                val = color.toString();
+                $group.find('.spectrum-input').val(val);
             }
             $group.find('.spectrum-source').spectrum('set', val);
         });
