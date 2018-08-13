@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-widgets
  * @subpackage yii2-widget-colorinput
- * @version 1.0.3
+ * @version 1.0.4
  */
 
 namespace kartik\color;
@@ -158,7 +158,6 @@ class ColorInput extends Html5Input
         if (!isset($this->type)) {
             $this->type = $this->useNative ? 'color' : 'text';
         }
-        $this->width = '60px';
         $this->initI18N(__DIR__);
         if (empty($this->html5Container['id'])) {
             $this->html5Container['id'] = $this->options['id'] . '-cont';
@@ -211,7 +210,7 @@ class ColorInput extends Html5Input
         $input = 'jQuery("#' . $this->html5Options['id'] . '")';
         $el = 'jQuery("#' . $this->options['id'] . '")';
         $cont = 'jQuery("#' . $this->html5Container['id'] . '")';
-        $doneJs = "function(){{$input}.spectrum('set',{$el}.val());{$cont}.removeClass('kv-center-loading');}";
+        $doneJs = "function(){{$input}.spectrum('set',{$el}.val());{$cont}.removeClass('kv-center-loading')}";
         $this->registerPlugin($this->pluginName, $input, $doneJs);
     }
 }

@@ -1,7 +1,8 @@
 yii2-widget-colorinput
 ======================
 
-[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-colorinput/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-colorinput)
+[![Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-colorinput/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-colorinput)
+[![Unstable Version](https://poser.pugx.org/kartik-v/yii2-widget-colorinput/v/unstable)](https://packagist.org/packages/kartik-v/yii2-widget-colorinput)
 [![License](https://poser.pugx.org/kartik-v/yii2-widget-colorinput/license)](https://packagist.org/packages/kartik-v/yii2-widget-colorinput)
 [![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-colorinput/downloads)](https://packagist.org/packages/kartik-v/yii2-widget-colorinput)
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-colorinput/d/monthly)](https://packagist.org/packages/kartik-v/yii2-widget-colorinput)
@@ -34,9 +35,9 @@ or add
 
 to the ```require``` section of your `composer.json` file.
 
-## Latest Release
+## Release Updates
 
-> NOTE: The latest version of the module is v1.0.3. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-colorinput/blob/master/CHANGE.md) for details.
+> NOTE: Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-colorinput/blob/master/CHANGE.md) for details on release wise changes.
 
 ## Demo
 
@@ -53,7 +54,7 @@ echo $form->field($model, 'color')->widget(ColorInput::classname(), [
 ]);
 
 // With model & without ActiveForm
-echo '<label class="control-label">Select Color</label>';
+echo '<label>Select Color</label>';
 echo ColorInput::widget([
     'model' => $model,
     'attribute' => 'saturation',

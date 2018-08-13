@@ -1,6 +1,13 @@
 Change Log: `yii2-widget-colorinput`
 ====================================
 
+## Version 1.0.4
+
+**Date:** 13-Aug-2018
+
+- Update to support Bootstrap 4.x
+- Reorganize all source code in `src` directory.
+
 ## Version 1.0.3
 
 **Date:** 14-Jan-2016
