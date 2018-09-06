@@ -17,6 +17,9 @@ namespace kartik\color;
  */
 class ColorInputAsset extends \kartik\base\AssetBundle
 {
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->setSourcePath(__DIR__ . '/assets');

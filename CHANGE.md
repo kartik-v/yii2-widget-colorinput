@@ -3,8 +3,10 @@ Change Log: `yii2-widget-colorinput`
 
 ## Version 1.0.4
 
-**Date:** 13-Aug-2018
+**Date:** 06-Sep-2018
 
+- Add github contribution and issue / PR templates.
+- (kartik-v/yii2-krajee-base#94): Refactor code and consolidate / optimize properties within traits.
 - Update to support Bootstrap 4.x
 - Reorganize all source code in `src` directory.
 
