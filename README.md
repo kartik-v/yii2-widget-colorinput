@@ -58,6 +58,7 @@ echo '<label>Select Color</label>';
 echo ColorInput::widget([
     'model' => $model,
     'attribute' => 'saturation',
+    'pluginOptions' => ['showInput' => false, 'showSelectionPalette' => false, 'showPalette' => false],
 ]);
 ```
 
