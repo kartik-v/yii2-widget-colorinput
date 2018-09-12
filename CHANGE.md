@@ -1,6 +1,12 @@
 Change Log: `yii2-widget-colorinput`
 ====================================
 
+## Version 1.0.5
+
+**Date:** 12-Sep-2018
+
+- Refactor code to consolidate Trait use.
+
 ## Version 1.0.4
 
 **Date:** 06-Sep-2018

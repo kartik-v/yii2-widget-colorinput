@@ -4,7 +4,7 @@
  * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-widgets
  * @subpackage yii2-widget-colorinput
- * @version 1.0.4
+ * @version 1.0.5
  */
 
 namespace kartik\color;
@@ -27,8 +27,6 @@ use kartik\base\TranslationTrait;
  */
 class ColorInput extends Html5Input
 {
-    use TranslationTrait;
-
     /**
      * @var boolean whether to use the native HTML5 color input
      */

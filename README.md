@@ -10,7 +10,7 @@ yii2-widget-colorinput
 
 The ColorInput widget is an advanced ColorPicker input styled for Bootstrap. It uses a combination of the HTML5 color input and/or the [JQuery Spectrum Plugin](http://bgrins.github.io/spectrum) for rendering the color picker. You can use the Native HTML5 color input by setting the `useNative` option to `true`. Else, the Spectrum plugin polyfills for unsupported browser versions.
 
-* Specially styled for Bootstrap 3.0 with customizable caption showing the output of the control.
+* Specially styled for Bootstrap 3.x and 4.x with customizable caption showing the output of the control.
 * Ability to prepend and append addons.
 * Allow the input to be changed both via the control or the text box.
 * The Spectrum plugin automatically polyfills the `HTML5 color input` for unsupported browser versions.
@@ -63,4 +63,4 @@ echo ColorInput::widget([
 
 ## License
 
-**yii2-widget-colorinput** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**yii2-widget-colorinput** is released under the BSD-3-Clause License. See the bundled `LICENSE.md` for details.
