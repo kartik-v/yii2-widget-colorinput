@@ -27,6 +27,11 @@ use kartik\base\TranslationTrait;
  */
 class ColorInput extends Html5Input
 {
+    /*
+     * @inheritdoc
+     */
+    public $sourcePath = '@vendor/kartik-v/yii2-krajee-base/src';
+    
     /**
      * @var boolean whether to use the native HTML5 color input
      */
