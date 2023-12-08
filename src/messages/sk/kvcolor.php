@@ -20,7 +20,7 @@ return [
     'Clear Color Selection' => 'Vymazanie výberu farby',
     'No Color Selected' => 'Nie je vybratá žiadna farba',
     'cancel' => 'zrušiť',
-    'choose' => 'vybetre',
+    'choose' => 'vybrať',
     'less' => 'menej',
     'more' => 'viac',
 ];
